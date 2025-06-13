@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+   <link rel="icon" href="Images/logo.jpg">
+  <title>Diet Plan</title>
+  <link rel="stylesheet" href="DietPage.css" />
+
+     <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Google Fonts
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+SA+Hand:wght@400..700&display=swap" rel="stylesheet"> -->
+</head>
+<body>
+
+  <!--  NAVIGATION BAR -->
+   <!-- Header section containing logo and navigation -->
+       <header>
+        <nav class="Welcome-navigation">
+            <!-- Website Logo -->
+            <div class="Welcome-logo">
+                <img src="./Images/logo.jpg" alt="logo" width="100" height="100">
+            </div>
+
+            <!-- Navigation Menu -->
+
+            <div class="Welcome-anchortags">
+                <a href="./Welcomepage2.html">Home</a>
+                 <a href="Welcomepage2.html#About">About</a>
+                <a href="./symptomschecker.html">Symptom Checker</a>
+                <a href="./Hospitals.html">Hospitals</a>
+                <a href="./DietPage.html">Diet Plan</a>
+                <a href="./Firstaid.html">First Aid</a>
+                <a href="./index.html" style="margin-right: 0px;"><i class="fas fa-user"></i> &nbsp; Log Out</a>
+        
+            </div>
+        </nav>
+    </header>
+
+  <!-- HEADING AND PARAGRAPH -->
+   <!-- HEADING AND PARAGRAPH -->
+<div class="diet-header">
+  <div class="diet-page-header">
+    <h3>Diet plan</h3>
+    <input type="text" placeholder="🔍 Search here.." >
+  </div>
+
+  <!-- Scrolling Diet Quote -->
+  <marquee behavior="scroll" direction="left" class="diet-quote">
+    🥗 ""When diet is wrong, medicine is of no use; when diet is correct, medicine is of no need."
+— Ayurvedic Proverb 🌿
+  </marquee>
+</div>
+
+
+  <!--  IMAGE GALLERY -->
+  <div class="diet-gallery">
+    <div class="diet-image-block">
+      <input type="checkbox" id="popup1" />
+      <label for="popup1"> <img src="./diet-img1.jpg" alt="Image 1" /></label>
+      <div class="diet-popup">
+        <div class="diet-popup-content">
+          <label for="popup1" class="diet-close-btn">&times;</label>
+          <h2>✅ Diabetic-Friendly Meal Plan</h2><br>
+          <h3>🍽️ Breakfast (8:00–9:00 AM)</h3><br>
+               <p> <b>Choose one of these:</b></p>
+               <p>Vegetable oats upma + 1 boiled egg
+               Moong dal chilla (mung bean pancake) + mint chutney<br>
+               Ragi dosa + coconut chutney<br>
+               Plain Greek yogurt + a few nuts and berries<br>
+               1 small apple or guava<br>
+              <b>💡 Tips: High fiber + protein = balanced sugar.</b></p><br>
+              <h3>🍛 Lunch (1:00–2:00 PM)</h3><br>
+              <b>Choose one combo:</b>
+              <p>Brown rice or 1-2 chapatis (multigrain)<br>
+                  dal or grilled paneer<br>
+                  cooked veggies<br>
+                  salad (cucumber, carrot, onion)<br>
+                  OR<br>
+
+                  Quinoa vegetable pulao + curd<br>
+                  <b>💡 Include fenugreek seeds (methi) in your curry or water <br>it helps reduce blood sugar.</b></p><br>
+                  <h3>🌇 Dinner (7:00–8:00 PM)</h3><br>
+                  <h4>Light and low-carb:</h4>
+                  <p>Vegetable soup + sprouts salad<br>
+                      Grilled fish or tofu + stir-fried veggies<br>
+                      Moong dal khichdi (low oil) + curd<br>
+                      Besan chilla + boiled veggies<br>
+                      </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="diet-image-block">
+      <input type="checkbox" id="popup2" />
+      <label for="popup2">
+        <img src="./diet-img2.jpg" alt="Image 2" />
+      </label>
+      <div class="diet-popup">
+        <div class="diet-popup-content">
+          <label for="popup2" class="diet-close-btn">&times;</label>
+          <h2>✅ Blood Pressure-Friendly Meal Plan</h2><br>
+          <p><h3>🍽️ Breakfast (8:00–9:00 AM)</h3><br>
+          <b>Choose one of these:</b><br>
+              Oats porridge with low-fat milk + flax seeds<br>
+              Whole wheat toast + boiled egg + tomato slices<br>
+              Ragi or vegetable upma + 1 small orange<br>
+                    Idli with sambar (low salt)<br>
+                    1 glass of unsalted lemon water or buttermilk<br>
+          <b>💡 Low salt, high fiber breakfast helps BP stay stable.</b>
+        </p><br>
+        <h3>🍛 Lunch (1:00–2:00 PM)</h3><br>
+        <b>Healthy and balanced options:</b><br>
+          Brown rice or 1–2 phulkas (no salt in dough)<br>
+          dal or boiled beans<br>
+          vegetable curry (low oil)<br>
+          salad with beetroot, carrot, cucumber curd (unsalted)<br>
+          <b>💡 Add garlic and turmeric in cooking — both are BP-friendly.</b><br><br>
+          <h3>🌇 Dinner (7:00–8:00 PM)</h3><br>
+          <b>Keep it light and salt-controlled:</b><br>
+          Vegetable soup + moong dal chilla<br>
+Steamed veggies + paneer/tofu stir fry<br>
+Broken wheat upma or millet dosa<br>
+1 glass of warm turmeric milk (low fat, no sugar)
+
+        </div>
+      </div>
+    </div>
+
+    <div class="diet-image-block">
+  <input type="checkbox" id="popup3" />
+  <label for="popup3">
+    <img src="./diet-img3.jpg" alt="Image 3" />
+  </label>
+  <div class="diet-popup">
+    <div class="diet-popup-content">
+      <label for="popup3" class="diet-close-btn">&times;</label>
+      <h2>❤️ Healthy-heart Meal Plan</h2><br>
+      <p>
+        <h3>🍽️ Breakfast (8:00–9:00 AM)</h3><br>
+        <b>Choose one of these:</b><br>
+        Oats porridge + flax/chia seeds<br>
+        Whole wheat toast + boiled egg white<br>
+        Low-fat milk + 4 soaked almonds + 1 walnut<br>
+        Vegetable poha with sprouts<br>
+        1 small banana or apple<br>
+        <b>💡 Tips: Focus on fiber + healthy fats (nuts, seeds).</b>
+      </p><br>
+
+      <h3>🍛 Lunch (1:00–2:00 PM)</h3><br>
+      <b>Balanced combo:</b>
+      <p>
+        1-2 multigrain chapatis or brown rice<br>
+        Boiled dal (low salt/oil) or grilled tofu/paneer<br>
+        Stir-fried veggies with olive oil<br>
+        Raw salad (beetroot, cucumber, carrot)<br>
+        Buttermilk (unsalted)<br>
+        <b>💡 Garlic and turmeric are heart-friendly. Avoid fried or salty foods.</b>
+      </p><br>
+
+      <h3>🌇 Dinner (7:00–8:00 PM)</h3><br>
+      <h4>Light and heart-safe:</h4>
+      <p>
+        Clear veggie soup + 1 besan chilla<br>
+        Grilled fish/tofu + sautéed spinach<br>
+        Millet khichdi (low oil) + curd<br>
+        Steamed veggies + low-salt moong dal<br>
+      </p>
+    </div>
+  </div>
+</div>
+
+
+    <div class="diet-image-block">
+  <input type="checkbox" id="popup4" />
+  <label for="popup4">
+    <img src="./diet-img4.jpg" alt="Anemia Diet Image" />
+  </label>
+  <div class="diet-popup">
+    <div class="diet-popup-content">
+      <label for="popup4" class="diet-close-btn">&times;</label>
+       <h2>💧 Kidney Stone-Friendly Meal Plan</h2><br>
+
+      <p>
+        <h3>🍽️ Breakfast (8:00–9:00 AM)</h3><br>
+        <b>Choose one of these:</b><br>
+        Idli with tomato chutney (avoid coconut)<br>
+        Oats porridge with almond milk (low oxalate)<br>
+        Apple + unsalted nuts (few)<br>
+        Rice flakes (poha) with veggies + lemon<br>
+        1 glass barley water or plain water with lemon<br>
+        <b>💡 Tip: Stay hydrated! At least 10–12 glasses of water daily.</b>
+      </p><br>
+
+      <h3>🍛 Lunch (1:00–2:00 PM)</h3><br>
+      <b>Stone-safe combo:</b>
+      <p>
+        1–2 wheat chapatis or white rice (yes, white rice is safer)<br>
+        Lauki (bottle gourd) or ridge gourd curry<br>
+        Moong dal or tur dal (low in oxalate)<br>
+        Cucumber salad + curd<br>
+        Coconut water (optional)<br>
+        <b>💡 Avoid spinach, tomato, brinjal, and too much salt.</b>
+      </p><br>
+
+      <h3>🌇 Dinner (7:00–8:00 PM)</h3><br>
+      <h4>Light and kidney-safe:</h4>
+      <p>
+        Vegetable soup (no spinach)<br>
+        Steamed rice + lauki dal<br>
+        Roti + lightly stir-fried vegetables<br>
+        Warm lemon water (no sugar or salt)<br>
+      </p>
+
+
+    </div>
+  </div>
+</div>
+     <div class="diet-image-block">
+      <input type="checkbox" id="popup5" />
+      <label for="popup5">
+        <img src="./diet-img5.jpg" alt="Image 5" />
+      </label>
+      <div class="diet-popup">
+        <div class="diet-popup-content">
+          <label for="popup5" class="diet-close-btn">&times;</label>
+          <h2>🍎 Anemia-Friendly Meal Plan</h2><br>
+
+      <p>
+        <h3>🍽️ Breakfast (8:00–9:00 AM)</h3><br>
+        <b>Choose one of these:</b><br>
+        Spinach and moong dal chilla + mint chutney<br>
+        Poha with peanuts + lemon (vitamin C helps iron absorption)<br>
+        Dates smoothie (milk + dates + almonds)<br>
+        Ragi porridge + 1 boiled egg<br>
+        1 orange or amla juice<br>
+        <b>💡 Tip: Add lemon juice to iron-rich foods for better absorption.</b>
+      </p><br>
+
+      <h3>🍛 Lunch (1:00–2:00 PM)</h3><br>
+      <b>Iron-boosting combo:</b>
+      <p>
+        1–2 chapatis (whole wheat) or brown rice<br>
+        Palak dal or rajma curry (iron-rich lentils)<br>
+        Beetroot and carrot salad<br>
+        Cooked greens (amaranth, drumstick leaves)<br>
+        Curd or buttermilk<br>
+        <b>💡 Include sesame seeds or jaggery (in moderation) in meals.</b>
+      </p><br>
+
+      <h3>🌇 Dinner (7:00-8:00 PM)</h3><br>
+      <h4>Light but iron-friendly:</h4>
+      <p>
+        Vegetable soup with spinach<br>
+        Moong dal khichdi + stir-fried green beans<br>
+        Tofu stir fry + quinoa<br>
+        1 small piece of dark chocolate (70%+ cocoa)<br>
+      </p>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="diet-image-block">
+      <input type="checkbox" id="popup6" />
+      <label for="popup6">
+        <img src="./diet-img6.jpg" alt="Image 6" />
+      </label>
+      <div class="diet-popup">
+        <div class="diet-popup-content">
+          <label for="popup6" class="diet-close-btn">&times;</label>
+          <h2>🦴 Calcium-Rich Meal Plan</h2><br>
+
+      <p>
+        <h3>🍽️ Breakfast (8:00–9:00 AM)</h3><br>
+        <b>Choose one of these:</b><br>
+        Ragi porridge or ragi dosa + chutney<br>
+        Low-fat milk or fortified soy milk + dry fruits<br>
+        Paneer sandwich (whole wheat bread)<br>
+        Almond smoothie (with banana and milk)<br>
+        <b>💡 Tip: Ragi and dairy are powerful natural calcium sources.</b>
+      </p><br>
+
+      <h3>🍛 Lunch (1:00–2:00 PM)</h3><br>
+      <b>Bone-strengthening combo:</b>
+      <p>
+        1–2 multigrain chapatis (add sesame seeds to dough)<br>
+        Palak dal (spinach + dal)<br>
+        Vegetable curry with amaranth or drumstick leaves<br>
+        Curd or buttermilk<br>
+        Til chutney (sesame-based)<br>
+        <b>💡 Include small fish (like sardines) if non-veg — rich in calcium.</b>
+      </p><br>
+
+      <h3>🌇 Dinner (7:00–8:00 PM)</h3><br>
+      <h4>Light and calcium-boosting:</h4>
+      <p>
+        Vegetable soup with tofu cubes<br>
+        Millet khichdi (ragi, bajra or jowar based)<br>
+        Roti + lauki curry + curd<br>
+        1 glass warm milk (optional: with turmeric)<br>
+      </p>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="diet-image-block">
+      <input type="checkbox" id="popup7" />
+      <label for="popup7">
+        <img src="./diet-img7.jpg" alt="Image 7" />
+      </label>
+      <div class="diet-popup">
+        <div class="diet-popup-content">
+          <label for="popup7" class="diet-close-btn">&times;</label>
+          <h2>🦋 Thyroid-Friendly Meal Plan</h2><br>
+
+      <p>
+        <h3>🍽️ Breakfast (8:00–9:00 AM)</h3><br>
+        <b>Choose one of these:</b><br>
+        Moong dal cheela + mint chutney<br>
+        Boiled egg + multigrain toast<br>
+        Smoothie with banana, flax seeds & almond milk<br>
+        Vegetable oats upma + 1 amla<br>
+        <b>💡 Tip: Eat within 30–45 mins of waking up to balance hormones.</b>
+      </p><br>
+
+      <h3>🍛 Lunch (1:00–2:00 PM)</h3><br>
+      <b>Thyroid-supportive combo:</b>
+      <p>
+        1–2 millet or wheat rotis (avoid maida)<br>
+        Moong dal or chana dal<br>
+        Cooked vegetables (lauki, carrot, beans, etc.)<br>
+        Cucumber & carrot salad<br>
+        Buttermilk (unsalted)<br>
+        <b>💡 Include selenium-rich foods like sunflower seeds & eggs.</b>
+      </p><br>
+
+      <h3>🌇 Dinner (7:00–8:00 PM)</h3><br>
+      <h4>Light and hormone-friendly:</h4>
+      <p>
+        Quinoa khichdi with veggies<br>
+        Clear soup + paneer or tofu salad<br>
+        Moong dal soup + sautéed greens<br>
+        Warm turmeric milk (low fat, no sugar)<br>
+      </p>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="diet-image-block">
+      <input type="checkbox" id="popup8" />
+      <label for="popup8">
+        <img src="./diet-img8.jpg" alt="Image 8" />
+      </label>
+      <div class="diet-popup">
+        <div class="diet-popup-content">
+          <label for="popup8" class="diet-close-btn">&times;</label>
+            <h2> Ulcer-Friendly Meal Plan</h2><br>
+
+      <p>
+        <h3>🍽️ Breakfast (8:00–9:00 AM)</h3><br>
+        <b>Choose one of these:</b><br>
+        Warm banana oats porridge (no sugar)<br>
+        Boiled or scrambled egg + white rice or toast<br>
+        Ragi or suji upma (low oil, no spice)<br>
+        Papaya or ripe banana<br>
+        <b>💡 Tip: Eat small, non-spicy meals. Avoid skipping breakfast.</b>
+      </p><br>
+
+      <h3>🍛 Lunch (1:00–2:00 PM)</h3><br>
+      <b>Soothing and balanced combo:</b>
+      <p>
+        Steamed white rice or soft chapatis<br>
+        Lauki (bottle gourd) curry or pumpkin mash<br>
+        Moong dal (well-cooked, no chili)<br>
+        Plain curd or buttermilk<br>
+        Steamed carrots or beans<br>
+        <b>💡 Avoid fried, acidic, or spicy foods to protect stomach lining.</b>
+      </p><br>
+
+      <h3>🌇 Dinner (7:00–8:00 PM)</h3><br>
+      <h4>Light and healing:</h4>
+      <p>
+        Plain vegetable khichdi (no onions/garlic)<br>
+        Oats or rice gruel<br>
+        Vegetable soup (carrot, pumpkin)<br>
+        Warm milk (if tolerated)<br>
+        <b>💡 Go early, light, and bland. Chew slowly and relax.</b>
+      </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="diet-image-block">
+      <input type="checkbox" id="popup9" />
+      <label for="popup9">
+        <img src="./diet-img9.jpg" alt="Image 9" />
+      </label>
+      <div class="diet-popup">
+        <div class="diet-popup-content">
+          <label for="popup9" class="diet-close-btn">&times;</label>
+          <h2>🤒 Fever-Friendly Meal Plan</h2><br>
+
+      <p>
+        <h3>🍽️ Breakfast (8:00–9:00 AM)</h3><br>
+        <b>Choose one of these:</b><br>
+        Suji (semolina) porridge with milk<br>
+        Idli with ghee + warm herbal tea<br>
+        Khichdi with moong dal (light on spice)<br>
+        Ripe banana or stewed apple<br>
+        <b>💡 Tip: Eat warm, soft, and easily digestible food. Stay hydrated.</b>
+      </p><br>
+
+      <h3>🍛 Lunch (1:00–2:00 PM)</h3><br>
+      <b>Light and healing combo:</b>
+      <p>
+        Moong dal khichdi with ghee<br>
+        Vegetable clear soup (carrot, lauki, beans)<br>
+        Boiled rice + plain curd (if no sore throat)<br>
+        Steamed or mashed veggies<br>
+        Coconut water or ORS (natural)<br>
+        <b>💡 Include garlic and turmeric in your food – natural immunity boosters.</b>
+      </p><br>
+
+      <h3>🌇 Dinner (7:00–8:00 PM)</h3><br>
+      <h4>Soothing and soft:</h4>
+      <p>
+        Plain oats or dal soup<br>
+        Dalia (broken wheat) porridge<br>
+        Steamed rice + soft boiled veggies<br>
+        1 glass warm milk with turmeric (if no cold)<br>
+      </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+<footer>
+  <div class="container2">
+    <section class="quick-links">
+      <h4>Quick Links</h4>
+      <ul>
+
+        <li><a href="./Welcomepage2.html"> Home</a></li>
+        <li><a href="./About"> About</a></li>
+        <li><a href="./symptomschecker.html">Symptom checker</a></li>
+        <li><a href="./DietPage.html">Diet Suggestions</a></li>
+        <li><a href="./Hospitals.html">Hospitals near me</a></li>
+        <li><a href="./Firstaid.html">First aid help</a></li>
+
+      </ul>
+    </section>
+    <section class="contact-feedback">
+      <div class="contact">
+        <h4>Contact Us</h4>
+        <p>Email: support@healthhub.com</p>
+        <p>Phone: +91-9988776655</p>
+      </div>
+      <div class="feedback-container">
+        <h4>Feedback</h4>
+        <a href="./Feedback.html" class="feedback-link">Give us your feedback</a>
+      </div>
+    </section>
+    <section class="follow">
+      <h4>Follow Us</h4>
+      <section class="icons">
+        <!-- Social Media Icons -->
+        <!-- Facebook -->
+        <a href="https://www.facebook.com" target="_blank">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Facebook_icon.svg" alt="Facebook" width="30">
+        </a>
+
+        <!-- Instagram -->
+        <a href="https://www.instagram.com" target="_blank">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" width="30">
+        </a>
+
+        <!-- Twitter -->
+       <a href="https://www.threads.net" target="_blank">
+  <img src="https://1000logos.net/wp-content/uploads/2023/07/Threads-Logo.png" alt="Threads" width="30" height="30">
+</a>
+
+<a href="https://twitter.com/yourprofile" target="_blank">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Logo_of_Twitter.svg" alt="Twitter" width="30">
+</a>
+
+
+      </section>
+    </section>
+    <div class="terms-sub">
+      <div class="terms">
+        <a href="#">
+          <h4>Terms & Conditions</h4>
+        </a>
+        <p class="disclaimer">
+          ⚠️ This app does not replace medical advice.<br>Call emergency services if needed.
+        </p>
+      </div>
+      <div class="subscribe">
+        <h4>Subscribe</h4>
+        <p class="subp">Stay updated with our latest health tips and news.</p>
+        <form id="subscribe-form">
+          <input class="email" type="email" placeholder="Enter your email" required />
+          <button class="submit" type="submit">Subscribe</button>
+            </div>
+  </form>
+      </div>
+
+    </div>
+    <div class="foot-down">
+      <hr class="full-line">
+      <p>&copy; 2025 HealthHub. All Rights Reserved.</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

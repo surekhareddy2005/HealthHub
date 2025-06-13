@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <title>Login/Signup</title>
+         <link rel="icon" href="Images/logo.jpg">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="LoginPage.css"/>
+    </head>
+    <body>
+        <div class="image">
+            <img src="./Health professional team.gif">
+        </div>
+        <div class="container-main">
+            <div class="logo">
+                <img src="./Images/logo.jpg">
+            </div>
+         <main class="container">
+            <input type="checkbox" id="flip-toggle">
+            <section class="card">
+                <form action="Welcomepage2.html">
+                <section class="side" id="front">
+                    <!--Login Form-->
+
+                    <header>
+                        <h2>Login</h2>
+                    </header>
+                    <section class="inputfield">
+
+                        <i class="fa-solid fa-user" style="color: #007bff;"></i>
+                        <input type="text" placeholder="Username" required minlength="4">
+                        <i class="fa-solid fa-lock" style="color: #007bff;"></i>
+                        <input type="password" placeholder="Password" required minlength="8">
+                    </section>
+                    <p>Forgot Password?</p>
+                    <button type="submit">Login</button>
+                    <label for="flip-toggle" style="text-align: center;">Don't have an account? Sign up</label>
+                    </form>
+                </section>
+            
+                <section class="side" id="back">
+                    <!--sign up Form-->
+                    <header>
+                        <h2>Sign Up</h2>
+                    </header>
+                <form action="Welcomepage2.html">
+                    <section class="inputfield">
+                        <i class="fa-solid fa-user" style="color: #007bff;"></i>
+                        <input type="text" placeholder="Username" required minlength="4">
+                        <i class="fa-solid fa-envelope" style="color: #007bff;"></i>
+                        <input type="email" placeholder="Email" required>
+                        <i class="fa-solid fa-lock" style="color: #007bff;"></i>
+                        <input type="password" placeholder="Password" required minlength="8">
+                        <i class="fa-solid fa-lock" style="color: #007bff;"></i>
+                        <input type="password" placeholder="Confirm Password" required minlength="8">
+                        
+                    </section>
+                    <button>Sign Up</button>
+                    <label for="flip-toggle" style="text-align: center;">Already have an account? Login</label>
+                </section>
+                </form>
+            </section>
+        </main>
+        </div>
+    </body>
+</html>

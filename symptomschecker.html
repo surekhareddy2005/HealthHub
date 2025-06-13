@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Symptom Checker</title>
+     <link rel="icon" href="Images/logo.jpg">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="symptomschecker.css">
+
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+SA+Hand:wght@400..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Header section containing logo and navigation -->
+       <header>
+        <nav class="Welcome-navigation">
+            <!-- Website Logo -->
+            <div class="Welcome-logo">
+                <img src="./Images/logo.jpg" alt="logo" width="100" height="100">
+            </div>
+
+            <!-- Navigation Menu -->
+            <div class="Welcome-anchortags">
+                <a href="./Welcomepage2.html">Home</a>
+                <!-- <a href="./About">About</a> -->
+                <a href="./symptomschecker.html">Symptom Checker</a>
+                <a href="./Hospitals.html">Hospitals</a>
+                <a href="./DietPage.html">Diet Plan</a>
+                <a href="./Firstaid.html">First Aid</a>
+                <a href="./index.html"><i class="fas fa-user"></i> &nbsp; Log Out</a>
+        
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main content section -->
+    <main>
+        <!-- Symptom checker section -->
+        <section class="checker">
+            <div class="checker_heading">
+                <center><h1 style="margin-top: 25px;">Symptom Checker <i class="fas fa-stethoscope stetho"></i></h1></center>
+                <p>Check your symptoms and get reliable guidance</p>
+            </div>
+
+            <!-- Form section for collecting user input -->
+            <section class="information">
+                <form action="./healthreport.html">
+
+                    <!-- Body Part Selection -->
+                    <div class="label_text">
+                        <label for="bodyPart">Body Part Selector</label>
+                    </div>
+                    <div class="user_input">
+                        <select id="bodyPart" required>
+                            <option selected disabled hidden>-- Select Body Part --</option>
+                            <option>Head</option>
+                            <option>Chest</option>
+                            <option>Abdomen</option>
+                            <option>Leg</option>
+                            <option>Arm</option>
+                            <option>Back</option>
+                            <option>Entire Body</option>
+                        </select>
+                    </div>
+
+                    <!-- Symptom Checkboxes -->
+                    <div class="label_text">
+                        <label>Select Your Symptoms</label>
+                    </div>
+                    <div class="user_input">
+                        
+                        <div class="cough">
+                            <input type="checkbox">
+                            <label>Cough</label>
+                        </div>
+                        <div class="fever">
+                            <input type="checkbox">
+                            <label>Fever</label>
+                        </div>
+                        <div class="nausea">
+                            <input type="checkbox">
+                            <label>Nausea</label>
+                        </div>
+                        <div class="diarrhea">
+                            <input type="checkbox">
+                            <label>Diarrhea</label>
+                        </div>
+                        <div class="chestpain">
+                            <input type="checkbox">
+                            <label>Chest Pain</label>
+                        </div>
+                    </div>
+
+                    <!-- Duration Input -->
+                    <div class="label_text">
+                        <label for="duration">Duration of Symptom (in days)</label>
+                    </div>
+                    <div class="user_input">
+                        <input id="duration" type="number" min="1" placeholder="e.g., 3" required>
+                    </div>
+
+                    <!-- Severity Radio Buttons -->
+                    <div class="label_text">
+                        <label>Severity Level</label>
+                    </div>
+                    <div class="user_input">
+                        <div class="mild">
+                            <input type="radio" name="severity" required>
+                            <label>Mild</label>
+                        </div>
+                        <div class="moderate">
+                            <input type="radio" name="severity">
+                            <label>Moderate</label>
+                        </div>
+                        <div class="severe">
+                            <input type="radio" name="severity">
+                            <label>Severe</label>
+                        </div>
+                        <div class="Critical">
+                            <input type="radio" name="severity">
+                            <label>Critical</label>
+                        </div>
+                    </div>
+
+                    <!-- Age Group Selection -->
+                    <div class="label_text">
+                        <label for="ageGroup">Age Group</label>
+                    </div>
+                    <div class="user_input">
+                        <select id="ageGroup" required>
+                            <option selected disabled hidden>-- Select Age Group --</option>
+                            <option>0-12</option>
+                            <option>13-18</option>
+                            <option>19-35</option>
+                            <option>36-60</option>
+                            <option>60+</option>
+                        </select>
+                    </div>
+
+                    <!-- Gender Radio Buttons -->
+                    <div class="label_text">
+                        <label>Gender</label>
+                    </div>
+                   
+                      
+                         <span class="gender-option">
+                            <input type="radio" name="gender" required>
+                            <label>Male</label>
+                        </span>
+
+                        <span class="gender-option">
+                            <input type="radio" name="gender">
+                            <label>Female</label>
+                        </span>
+
+                        <span class="gender-option">
+                            <input type="radio" name="gender">
+                            <label>Others</label>
+                        </span>
+                        
+
+                    <!-- Buttons -->
+                    <div class="buttons">
+                        <div class="submit_but">
+                            <button type="submit">Show Result</button>
+                        </div>
+                        <div class="reset_but">
+                            <button type="reset">Reset</button>
+                        </div>
+                    </div>
+                </form>
+            </section>
+        </section>
+
+        <!-- Doctor image and quote -->
+        <aside class="doctor">
+            <img src="./Images/main-bg.png" alt="Doctor Image" class="doctor_img">
+            <marquee class="quote">"Stay strong <i class="fas fa-heart" style="color:#007BFF;"></i> . We're here to help you find relief."</marquee>
+        </aside>
+    </main>
+
+    <footer>
+  <div class="container2">
+    <section class="quick-links">
+      <h4>Quick Links</h4>
+      <ul>
+
+        <li><a href="./Welcomepage2.html"> Home</a></li>
+        <li><a href="./About"> About</a></li>
+        <li><a href="./symptomschecker.html">Symptom checker</a></li>
+        <li><a href="./DietPage.html">Diet Suggestions</a></li>
+        <li><a href="./Hospitals.html">Hospitals near me</a></li>
+        <li><a href="./Firstaid.html">First aid help</a></li>
+
+      </ul>
+    </section>
+    <section class="contact-feedback">
+      <div class="contact">
+        <h4>Contact Us</h4>
+        <p>Email: support@healthhub.com</p>
+        <p>Phone: +91-9988776655</p>
+      </div>
+      <div class="feedback-container">
+        <h4>Feedback</h4>
+        <a href="./Feedback.html" class="feedback-link " style="font-size: 16px;">Give us your feedback</a>
+      </div>
+    </section>
+    <section class="follow">
+      <h4>Follow Us</h4>
+      <section class="icons">
+        <!-- Social Media Icons -->
+        <!-- Facebook -->
+        <a href="https://www.facebook.com" target="_blank">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Facebook_icon.svg" alt="Facebook" width="30">
+        </a>
+
+        <!-- Instagram -->
+        <a href="https://www.instagram.com" target="_blank">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" width="30">
+        </a>
+
+        <!-- Twitter -->
+       <a href="https://www.threads.net" target="_blank">
+  <img src="https://1000logos.net/wp-content/uploads/2023/07/Threads-Logo.png" alt="Threads" width="30" height="30">
+</a>
+
+<a href="https://twitter.com/yourprofile" target="_blank">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Logo_of_Twitter.svg" alt="Twitter" width="30">
+</a>
+
+
+
+
+
+      </section>
+    </section>
+    <div class="terms-sub">
+      <div class="terms">
+        <a href="#">
+          <h4>Terms & Conditions</h4>
+        </a>
+        <p class="disclaimer">
+          ⚠️ This app does not replace medical advice.<br>Call emergency services if needed.
+        </p>
+      </div>
+      <div class="subscribe">
+        <h4>Subscribe</h4>
+        <p class="subp">Stay updated with our latest health tips and news.</p>
+        <form id="subscribe-form">
+          <input class="email" type="email" placeholder="Enter your email" required />
+          <button class="submit" type="submit">Subscribe</button>
+            </div>
+  </form>
+      </div>
+
+    </div>
+    <div class="foot-down">
+      <hr class="full-line">
+      <p style="font-size: 16px; margin: 0px;">&copy; 2025 HealthHub. All Rights Reserved.</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

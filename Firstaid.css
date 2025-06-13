@@ -1,0 +1,463 @@
+/* Reset default margins and paddings, set box-sizing for consistency */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Base font for the body */
+body {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Header container styling */
+.head {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  background-color: #e9f3f5;
+  width: 100%;
+  font-family: "Edu SA Hand", cursive;
+  justify-content: center;
+  
+   
+}
+
+/* Main heading layout */
+.main_heading {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Repeated key removed */
+  align-items: center;
+}
+
+/* Text within header */
+.head-text {
+  text-align: center;
+  margin-top:5px;
+}
+
+/* Home link or icon */
+.home {
+  position: absolute;
+  right:30px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #0056b3;
+  cursor: pointer;
+  padding-top: 20px;
+  
+} 
+  
+
+/* Home paragraph styling */
+.home-p {
+  font-size: 23px;
+  font-weight: bold;
+  color: #0056b3;
+  padding: 5px 2px;
+  cursor: pointer;
+}
+
+/* Hover effect for home paragraph */
+.home-p:hover {
+  color: white;
+  background-color: #007BFF;
+  border-radius: 10px;
+}
+
+/* Header content section (image and title) */
+.head-content {
+  display: flex;
+  flex-direction: row;
+  column-gap: 10px;
+  justify-content: center;
+  align-items: center;
+  padding: 10px  20px;
+  background-color: #e9f3f5;
+}
+.main_heading{
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top:-20px ;
+}
+
+/* Styling the header image */
+.head-image img {
+  width: 100px;
+  height: 100px;
+  border-radius: 20px;
+  border: 4px solid #e0f1f4;
+}
+
+/* Main heading style */
+h2 {
+
+  font-size: 50px;
+  letter-spacing: -2px;
+  color: #007BFF;
+  margin-bottom: 2px;
+}
+
+/* Paragraph text style */
+p {
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+  color: #007BFF;
+}
+
+/* Navigation bar styling */
+.nav {
+  background-color: #e9f3f5;
+  padding: 10px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  border-bottom: 1px solid #edf4fb;
+  margin-bottom: 50px;
+  font-family: "Edu SA Hand", cursive;
+}
+
+/* Navigation links */
+.nav a, button a {
+  font-size: 20px;
+  color: #0056b3;
+  text-decoration: none;
+  padding: 10px 15px;
+  font-weight: bold;
+}
+
+/* Hover and focus effects for nav links */
+.nav a:hover,
+.nav a:focus,
+.nav a:focus-visible,
+button a:hover {
+  color: white;
+  background-color: #007BFF;
+  border-radius: 10px;
+  outline: none;
+}
+
+/* Main content container */
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin: 60px 20px 20px 20px;
+  column-gap: 30px;
+  justify-content: space-around;
+}
+
+/* Error message box */
+.error {
+  border-left: 20px solid #f8d7da;
+  border-right: 1px solid #f8d7da;
+  border-bottom: 1px solid #f8d7da;
+  border-top: 0.5px solid #f8d7da;
+  border-radius: 10px;
+}
+
+/* Warning message box */
+.warning {
+  border-left: 20px solid #f5e6b4;
+  border-radius: 10px;
+  border-right: 1px solid #f5e6b4;
+  border-bottom: 1px solid #f5e6b4;
+  border-top: 1px solid #f5e6b4;
+}
+
+/* Primary message box */
+.primary-light {
+  border-left: 20px solid #d6e3f8;
+  border-radius: 10px;
+  border-right: 1px solid #d6e3f8;
+  border-bottom: 1px solid #d6e3f8;
+  border-top: 1px solid #d6e3f8;
+}
+
+/* List style */
+.lists {
+  list-style: none;
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: 1.5px;
+}
+
+/* Shared card-like styling */
+.styling {
+  margin-bottom: 30px;
+  width: 570px;
+  padding: 20px;
+  background-color: #f8f9fa;
+
+}
+
+/* Section title style */
+h4 {
+  font-size: 30px;
+  color: #003366;
+  line-height: 1.7;
+  font-family: "Edu SA Hand", cursive;
+}
+
+
+/* Hover effects for error box */
+#bleeding:target , #electric-shock:target , #heart-attacks:target  {
+  transform: scale(1.02);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #f8d7da;
+  cursor: pointer;
+}
+/* Hover effects for warning box */
+#burns:target, #choking:target , #snake-bites:target {
+  transform: scale(1.02);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #f5e6b4;
+  cursor: pointer;
+
+}
+
+/* Hover effects for primary box */
+#fractures:target, #drowning:target {
+  transform: scale(1.02);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #d6e3f8;
+  cursor: pointer;
+
+} 
+
+
+
+/* General button styling */
+button {
+  padding: 10px 20px;
+  font-size: 60px;
+  background-color: #edf4fb;
+  color: #003366;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  outline: none;
+  font-family: "Edu SA Hand", cursive;
+}
+
+button a {
+  font-size: 25px;
+}
+
+footer{
+    text-decoration: none;
+    margin:0px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 30px 20px 20px;
+    background-color: #83a7cb ;
+    color: rgb(0,0,0);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-size: 16px;
+
+}
+.container2{
+    display:flex;
+    direction:row;
+    justify-content: space-evenly;
+    /* column-gap:10px; */
+    flex-wrap:wrap;
+    
+}
+footer a:hover {
+  color: #e8cf74;            /* Yellowish highlight */
+  text-decoration: underline;
+}
+footer a {
+  text-decoration: none;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+footer h4{
+     font-size: 20px;
+    margin-bottom: 10px;
+  color: #f4d35e;
+}
+.quick-links ul {
+  list-style: none;
+  padding: 0;
+}
+ .quick-links a , .contact p{
+  font-size:16px;
+  color: #fff;
+  text-decoration: none;
+}
+.foot-down{
+  margin-top:20px;
+  padding-top:10px;
+}
+.foot-down p{
+  padding-top:20px;
+  text-align: center;
+  color:white;
+  font-size: 16px;
+  
+}
+.contact-feedback{
+  display: flex;
+  flex-direction:column;
+  row-gap: 20px;
+}
+.terms-sub{
+  display: flex;
+  flex-direction:column;
+  row-gap: 20px;
+  font-size: 16px;
+
+}
+.disclaimer {
+  
+  font-style: italic;
+  color: #ffc9c9;
+}
+.subscribe-container p {
+  color: #fff;
+  font-size: 14px;
+  margin-bottom: 8px;
+  max-width: 300px;
+}
+.subp{
+  font-size:15px;
+  color:#fff;
+  margin-bottom:10px;
+}
+.icons{
+  display:flex;
+  flex-direction: row;
+  column-gap:10px;
+}
+.icons img {
+  /* width: 30px; */
+  height: 30px;
+  object-fit: cover; /* or 'cover' depending on image content */
+  vertical-align: middle;
+}
+.email {
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  font-size: 14px;
+  width: 250px;
+  border:1px solid rgb(135, 126, 126);
+
+}
+#subscribe-form button {
+  padding: 10px;
+  background-color: #f4d35e;
+  color: #000;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: fit-content;
+  font-size: 15px;
+}
+
+#subscribe-form button a {
+  font-size: 20px;
+}
+#subscribe-form button:hover {
+  background-color: #e3be3a;
+}
+.email:hover{
+    border:1px solid rgb(135, 126, 126);
+  }
+
+  /* Medium devices (tablets, 768px and up) */
+@media (max-width: 991px) {
+  .container2 {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .contact-feedback,
+  .follow,
+  .terms-sub,
+  .quick-links {
+    width: 100%;
+  }
+
+  .icons {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .email input{
+    width: 70%;
+  }
+
+  
+
+}
+
+/* Small devices (phones, 600px and down) */
+@media (max-width: 600px) {
+  footer {
+    padding: 20px 10px;
+  }
+
+  .container2 {
+    padding: 0;
+    gap: 20px;
+  }
+
+  .quick-links ul {
+    padding: 0;
+  }
+
+  .quick-links li {
+    margin: 5px 0;
+  }
+
+  .email input{
+    font-size: 14px;
+    width: 100%;
+  }
+
+  #subscribe-form button {
+    width: 60%;
+    margin-top: 10px;
+  }
+
+  .icons img {
+    height: 24px;
+    width: 24px;
+  }
+
+  .subp {
+    font-size: 13px;
+  }
+
+  .disclaimer {
+    font-size: 13px;
+  }
+
+  footer h4 {
+    font-size: 18px;
+  }
+
+  .foot-down p {
+    font-size: 14px;
+  }
+}
+
+footer h4 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}

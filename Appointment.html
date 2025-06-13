@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Appointment</title>
+     <link rel="icon" href="Images/logo.jpg">
+    <link rel="stylesheet" href="Appointment.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    
+     <header>
+        <nav class="Welcome-navigation">
+            <!-- Website Logo -->
+            <div class="Welcome-logo">
+                <img src="./Images/logo.jpg" alt="logo" width="100" height="100">
+            </div>
+
+            <!-- Navigation Menu -->
+            <div class="Welcome-anchortags">
+                <a href="./Welcomepage2.html">Home</a>
+                <a href="Welcomepage2.html#About">About</a>
+                <a href="./symptomschecker.html">Symptom Checker</a>
+                <a href="./Hospitals.html">Hospitals</a>
+                <a href="./DietPage.html">Diet Plan</a>
+                <a href="./Firstaid.html">First Aid</a>
+                <a href="./Welcomepage.html"><i class="fas fa-user"></i> &nbsp; Log Out</a>
+        
+            </div>
+        </nav>
+    </header>
+    <main> 
+        <div class="appointment_page">
+
+            <div class="appointment_card">
+            <div class="appointment_front_form">
+                <div class="appo_name_loc">
+                        <div class="appo_hosp_name">Hospital Name</div>
+                        <div class="appo_hosp_loc">location</div>
+                    </div>
+                    <div class="appo_book_heading">
+                        <div class="appo_book_title">BOOK AN APPOINTMENT</div>
+                        <div class="appo_book_descri">Choose a convenient time to meet our doctor.</div>
+                    </div>
+                    <div class="appo_form">
+                        <form action="AppoSuccess.html" method="get" id="appointmentForm">
+                            <label><span class="label-text">Full Name</span> <span>:</span></label>
+                            <input type="text" placeholder="Enter your Full Name" required />
+                            <br>
+
+                            <label><span class="label-text">Phone Number </span> <span>:</span></label>
+                            <input type="number" placeholder="Enter your phone number" required/>
+                            <br>
+
+                            <label><span class="label-text">Date</span>&nbsp;:</span></label>&nbsp;&nbsp;&nbsp;
+                            <input type="date" required />
+                            <br>
+
+                            <label><span class="label-text">Time slot</span><span>&nbsp;:</span></label>
+                            <select required>
+                                <option value="" disabled selected hidden>---Select---</option>
+                                <option>9:30 AM - 10:30 Am</option>
+                                <option>10:30 AM - 11:30 Am</option>
+                                <option>11:30 AM - 12:30 Am</option>
+                                <option>2:00 AM - 3:00 Am</option>
+                                <option>3:00 AM - 4:00 Am</option>
+                                <option>4:00 AM - 5:00 Am</option>
+                            </select>
+                            <br>
+
+                            <label><span class="label-text">Reason for visit</span> <span>:</span></label>
+                            <select required>
+                                <option value="" disabled selected hidden>---Select---</option>
+                                <option>Regular Checkup</option>
+                                <option>Fever/Cold</option>
+                                <option>Skin Allergy</option>
+                                <option>Follow-up</option>
+                                <option>Other</option>
+                            </select>
+                            <br>
+
+                            <input type="checkbox" class="appo_checkbox" required/> <label class="appo_confirm"> I confirm the above information is correct.</label>
+                            <br>
+
+                            <div class="appo_buttons">
+                                <button type="submit" class="appo_book_btn">Book Appointment</button>
+                                <input type="reset" value="Cancel" />
+                            </div>
+                            <br>
+                        </form>
+                 
+                       </div>
+             </div>
+            </div>
+
+             </div>        
+
+          <div class="appo_hosp_img"><img src="./Images/hosp11.png" alt="hosp_image"></div>
+
+          
+        </div>
+        
+            
+        
+        
+    </main>
+
+
+    <footer>
+  <div class="container2">
+    <section class="quick-links">
+      <h4>Quick Links</h4>
+      <ul>
+
+        <li><a href="./Welcomepage2.html"> Home</a></li>
+        <li><a href="./About"> About</a></li>
+        <li><a href="./symptomschecker.html">Symptom checker</a></li>
+        <li><a href="./DietPage.html">Diet Suggestions</a></li>
+        <li><a href="./Hospitals.html">Hospitals near me</a></li>
+        <li><a href="./Firstaid.html">First aid help</a></li>
+
+      </ul>
+    </section>
+    <section class="contact-feedback">
+      <div class="contact">
+        <h4>Contact Us</h4>
+        <p>Email: support@healthhub.com</p>
+        <p  style="margin-bottom: 0px;">Phone: +91-9988776655</p>
+      </div>
+      <div class="feedback-container">
+        <h4 style="margin: 0px;">Feedback</h4>
+        <a href="./Feedback.html" class="feedback-link">Give us your feedback</a>
+      </div>
+    </section>
+    <section class="follow">
+      <h4>Follow Us</h4>
+      <section class="icons">
+        <!-- Social Media Icons -->
+        <!-- Facebook -->
+        <a href="https://www.facebook.com" target="_blank">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Facebook_icon.svg" alt="Facebook" width="30">
+        </a>
+
+        <!-- Instagram -->
+        <a href="https://www.instagram.com" target="_blank">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" width="30">
+        </a>
+
+        <!-- Twitter -->
+       <a href="https://www.threads.net" target="_blank">
+  <img src="https://1000logos.net/wp-content/uploads/2023/07/Threads-Logo.png" alt="Threads" width="30" height="30">
+</a>
+
+<a href="https://twitter.com/yourprofile" target="_blank">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Logo_of_Twitter.svg" alt="Twitter" width="30">
+</a>
+
+
+
+
+
+      </section>
+    </section>
+    <div class="terms-sub">
+      <div class="terms">
+        <a href="#">
+          <h4>Terms & Conditions</h4>
+        </a>
+        <p class="disclaimer" style="margin-bottom: 0px;">
+          ⚠️ This app does not replace medical advice.<br>Call emergency services if needed.
+        </p>
+      </div>
+      <div class="subscribe">
+        <h4 style="margin:0px;">Subscribe</h4>
+        <p class="subp">Stay updated with our latest health tips and news.</p>
+        <form id="subscribe-form">
+          <input class="email" type="email" placeholder="Enter your email" required />
+          <button class="submit" type="submit">Subscribe</button>
+            </div>
+  </form>
+      </div>
+
+    </div>
+    <div class="foot-down">
+      <hr class="full-line">
+      <p>&copy; 2025 HealthHub. All Rights Reserved.</p>
+    </div>
+  </div>
+</footer>
+
+    
+</body>
+</html>
